@@ -1,0 +1,27 @@
+spring:
+   profiles: dev
+
+spring:
+   datasource:
+      driverClassName: com.mysql.jdbc.Driver
+      url: jdbc:mysql://localhost:3306/springbootdb
+      username: root
+      password:
+
+spring.jpa:
+      show-sql: true
+      hibernate:
+        ddl-auto: create-drop
+      properties:
+         hibernate:
+            dialect: org.hibernate.dialect.MySQL5Dialect
+#spring:
+#   datasource:
+#      platform: postgresql
+#      url: jdbc:postgresql://localhost/springbootdb
+#      username: postgres
+#      password: postgres
+#      driverClassName: org.postgresql.Driver
+#   jpa:
+#      hibernate:
+#         ddl-auto: create-drop
