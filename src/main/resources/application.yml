@@ -3,10 +3,12 @@ spring:
 
 spring:
    datasource:
-      driverClassName: com.mysql.jdbc.Driver
-      url: jdbc:mysql://localhost:3306/springbootdb
-      username: root
-      password:
+      #driverClassName: com.mysql.jdbc.Driver
+      driverClassName: org.postgresql.Driver
+      #url: jdbc:mysql://localhost:3306/springbootdb
+      url: jdbc:postgresql://localhost:5432/springbootdb
+      username: gbe
+      password: gbe
 
 spring.jpa:
       show-sql: true
@@ -14,7 +16,8 @@ spring.jpa:
         ddl-auto: create-drop
       properties:
          hibernate:
-            dialect: org.hibernate.dialect.MySQL5Dialect
+            #dialect: org.hibernate.dialect.MySQL5Dialect
+            dialect: org.hibernate.dialect.PostgreSQLDialect
 #spring:
 #   datasource:
 #      platform: postgresql
