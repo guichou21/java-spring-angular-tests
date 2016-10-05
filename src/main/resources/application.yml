@@ -1,11 +1,10 @@
 spring:
    profiles: dev
 
+#Cong PostGresql
 spring:
    datasource:
-      #driverClassName: com.mysql.jdbc.Driver
       driverClassName: org.postgresql.Driver
-      #url: jdbc:mysql://localhost:3306/springbootdb
       url: jdbc:postgresql://localhost:5432/springbootdb
       username: gbe
       password: gbe
@@ -16,15 +15,15 @@ spring.jpa:
         ddl-auto: create-drop
       properties:
          hibernate:
-            #dialect: org.hibernate.dialect.MySQL5Dialect
             dialect: org.hibernate.dialect.PostgreSQLDialect
+
+#Conf Mysql
 #spring:
 #   datasource:
-#      platform: postgresql
-#      url: jdbc:postgresql://localhost/springbootdb
-#      username: postgres
-#      password: postgres
-#      driverClassName: org.postgresql.Driver
-#   jpa:
-#      hibernate:
-#         ddl-auto: create-drop
+      #driverClassName: com.mysql.jdbc.Driver          ?
+      #url: jdbc:mysql://localhost:3306/springbootdb   ?
+
+#spring.jpa:
+#      properties:
+#         hibernate:
+                  #dialect: org.hibernate.dialect.MySQL5Dialect     ?
