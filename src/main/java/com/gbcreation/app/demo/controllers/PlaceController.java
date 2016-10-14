@@ -13,7 +13,6 @@ import java.util.Collection;
 @RequestMapping(value = "/places")
 public class PlaceController {
     @Resource
-    @Getter
     @Setter
     private PlaceService placeService;
 

@@ -1,7 +1,7 @@
 spring:
    profiles: dev
 
-#Cong PostGresql
+#Conf PostGresql
 spring:
    datasource:
       driverClassName: org.postgresql.Driver
