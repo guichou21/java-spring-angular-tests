@@ -1,5 +1,11 @@
+#clé possible
+#http://docs.spring.io/spring-boot/docs/current/reference/html/common-application-properties.html
 spring:
-   profiles: dev
+  profiles.active: dev
+
+---
+#spring:
+#   profiles: dev
 
 #Cong PostGresql
 spring:
@@ -27,3 +33,17 @@ spring.jpa:
 #      properties:
 #         hibernate:
                   #dialect: org.hibernate.dialect.MySQL5Dialect     ?
+
+---
+#spring:
+#   profiles: test
+# LIQUIBASE
+liquibase.change-log=classpath:classpath:liquibase-changelog.sql
+liquibase.check-change-log-location=true
+#liquibase.contexts= # runtime contexts to use
+#liquibase.default-schema=springbootdb  ???
+#liquibase.drop-first=false  ???
+#liquibase.enabled=true ???
+#liquibase.url= # specific JDBC url (if not set the default datasource is used)
+#liquibase.user=gbe ???
+#liquibase.password=gbe ???
