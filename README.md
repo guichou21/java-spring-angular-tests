@@ -1,20 +1,26 @@
 # java-spring-angular-tests
-Petit tests de différents frameworks
+Petite application qui utilise tous les frameworks suivants pour son bon fonctionnement
 
-
-# Objectifs
+# Frameworks
 ## core
-* hibernate		[]
-* spring-boot	[]
-* Rest			[]
-* angular		[]
-* docker		[]
-* CI gitlab		[]
-* TestNG
+* Postgré
+* hibernate		  []
+* spring-boot	  []
+* spring security []
+* spring....?
+* Swagger		  []
+* Rest			  []
+* angularJs		  []
+* TestNG		  []
+* Cucumber ou Concordion
+* ehCache
+
+* docker		  []
+* lombock
+* slf4j
+* CI gitlab		  []
 
 ## addon
 * Deployer pour pousser les confs
 * Liquibase
-* slf4j
 * node.js
-* lombock
